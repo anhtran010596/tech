@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8rem;
+}
+
+.heroBanner .slick-dots li {
+  margin: 0;
+}
+
+.heroBanner .slick-dots .slick-active {
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBanner .slick-dots .slick-active button:before {
+  content: "";
+}
+
+.heroBanner .slick-dots .slick-active button {
+  background-color: white;
+  transform: scale(0.5);
+  border-radius: 50%;
+}
+
+.heroBanner .slick-dots {
+  bottom: 36px;
+  left: 70px;
+  display: flex !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .heroBanner .slick-dots {
+    bottom: 80px;
+    left: 0;
+    display: block !important;
+  }
+}
